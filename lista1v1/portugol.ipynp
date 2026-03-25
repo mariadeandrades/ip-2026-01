@@ -1,0 +1,738 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mariadeandrades/ip-2026-01/blob/main/listaalgoritmos_py.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Resolução da Lista 1 de Introdução à Programação\n",
+        "Aluna: Maria Clara de Andrde e Silva\n",
+        "\n",
+        "Matrícula: 202600694\n",
+        "\n",
+        "Goiânia, Goiás - 13 de março de 2026"
+      ],
+      "metadata": {
+        "id": "mWMmgUKl_weR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 1:\n"
+      ],
+      "metadata": {
+        "id": "x9f75BfXAULH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_aprova_reprova\n",
+        "\n",
+        "declare media, nota1, nota2, nota3 numerico\n",
+        "\n",
+        "escreva (\"Quais são suas notas? (Digite-as espaçadamente)\")\n",
+        "leia nota1 nota2 nota3\n",
+        "\n",
+        "funcao media(nota1, nota2, nota3)\n",
+        "    retorne ((nota1 + nota2 + nota3)/3) \"\\n\"\n",
+        "se media >= 6:\n",
+        "  escreva (\"APROVADO!\\n\")\n",
+        "senão\n",
+        "  escreva (\"REPROVADO!\\n\")\n",
+        "\n",
+        "fim_algoritmo_aprova_reprova\n"
+      ],
+      "metadata": {
+        "id": "MgvMAdMBAqTl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 2:"
+      ],
+      "metadata": {
+        "id": "SBrf8NiMEDLs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_publico_futebol\n",
+        "\n",
+        "declare ptotal, ppopular, pgeral, parqui, pcadeiras, rendatotal, rp, rg, ra, rc numerico\n",
+        "\n",
+        "escreva (\"Qual o público total do jogo?\")\n",
+        "leia ptotal\n",
+        "escreva (\"Qual a porcentagem de público nas categorias popular, geral, arquibancada e cadeiras, respectivamente, em decimal?\")\n",
+        "leia ppopular pgeral parqui pcadeiras\n",
+        "funcao rp(ptotal, ppopular)\n",
+        "    retorne(ptotal*ppopular*1)\n",
+        "funcao rg(ptotal, pgeral)\n",
+        "    retorne(ptotal*pgeral*5)\n",
+        "funcao ra(ptotal*parqui*10)\n",
+        "    retorne(ptotal*parqui*10)\n",
+        "funcao rc(ptotal, pcadeiras)\n",
+        "    retorne(ptotal*pcadeiras*20)\n",
+        "\n",
+        "rendatotal = (rp + rg + ra + rc)\n",
+        "\n",
+        "fim_algoritmo_publico_futebol"
+      ],
+      "metadata": {
+        "id": "E1_5L3p4EHFd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 3:"
+      ],
+      "metadata": {
+        "id": "Tl_MYpC_XebJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_composicao\n",
+        "\n",
+        "declare n1, n2, n3, x, y numerico\n",
+        "\n",
+        "escreva (\"Digite o primeiro número da composição, entre 1 e 9.\")\n",
+        "leia n1\n",
+        "se n1 = 0:\n",
+        "    escreva (\"Número inválido.\")\n",
+        "se n1 > 9:\n",
+        "    escreva (\"Número inválido.\")\n",
+        "\n",
+        "escreva (\"Digite o segundo número da composição, entre 1 e 9.\")\n",
+        "leia n2\n",
+        "se n2 > 9:\n",
+        "    escreva (\"Número inválido.\")\n",
+        "\n",
+        "escreva (\"Digite o terceiro número da composição, entre 1 e 9.\")\n",
+        "leia n3\n",
+        "se n3 > 9:\n",
+        "    escreva (Número inválido.\")\n",
+        "\n",
+        "//usando a concatenação de números em portugol, feita por meio da vírgula entre os números a serem concatenados\n",
+        "escreva (n1, n2, n3) = x\n",
+        "x^2 = y\n",
+        "escreva (\"O resultado da composição é\" x \",e o quadrado da composição é\" y.\")\n",
+        "\n",
+        "fim_algoritmo_composicao\n"
+      ],
+      "metadata": {
+        "id": "7ilAKBQkXx1N"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 4:"
+      ],
+      "metadata": {
+        "id": "967X-pYQbzjn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_salario_energia\n",
+        "\n",
+        "declare salariomin, gastomen, conta, desconto numerico\n",
+        "\n",
+        "escreva (\"Qual o valor atual do salário mínimo?\")\n",
+        "leia salariomin\n",
+        "escreva (\"Qual o gasto de energia mensal da residência, em kW?\")\n",
+        "leia gastomen\n",
+        "\n",
+        "funcao conta(salariomin, gastomen)\n",
+        "    retorne (gastomen*11,347)\n",
+        "\n",
+        "funcao desconto(conta)\n",
+        "    retorne(conta*0,9)\n",
+        "\n",
+        "fim_algoritmo_salario_energia"
+      ],
+      "metadata": {
+        "id": "hh9Fcedob3HA"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 5:"
+      ],
+      "metadata": {
+        "id": "cBsr20nRPVZH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_conta_agua\n",
+        "\n",
+        "declare tipo, string\n",
+        "declare consumo, conta numerico\n",
+        "\n",
+        "escreva (\"Qual tipo de conta é a sua?\")\n",
+        "receba tipo\n",
+        "escreva (\"Qual o seu consumo mensal de água, em litros?\")\n",
+        "receba consumo\n",
+        "\n",
+        "se tipo == residencial:\n",
+        "    entao conta = (5 + 0,5*consumo)\n",
+        "se tipo == comercial:\n",
+        "    entao conta =(500 + (consumo - 80)*0,25)\n",
+        "senao\n",
+        "    entao conta = (800 + (consumo - 100)*0,04)\n",
+        "\n",
+        "fim_algoritmo_conta_agua\n"
+      ],
+      "metadata": {
+        "id": "v3bNAavOPZvu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 6:"
+      ],
+      "metadata": {
+        "id": "YKMoCteZWpTU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_celsius_fahrenheit\n",
+        "\n",
+        "declare F, C float\n",
+        "\n",
+        "escreva (\"Qual o valor em Fahrenheit a ser convertido?\")\n",
+        "receba F\n",
+        "\n",
+        "funcao C(F)\n",
+        "    retorne(5(F-32)/9)\n",
+        "\n",
+        "escreva (F \"FAHRENHEIT EQUIAVEL A\" C \"CELSIUS.\")\n",
+        "\n",
+        "fim_algoritmo_celsius_fahrenheit"
+      ],
+      "metadata": {
+        "id": "Y0PWsynjWrv4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 7:"
+      ],
+      "metadata": {
+        "id": "rzgKXlux7_W8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_conversoes_gerais\n",
+        "\n",
+        "declare F, P float\n",
+        "\n",
+        "escreva (\"Digite o valor em Fahrenheit a ser convertido.\")\n",
+        "receba F\n",
+        "funcao C(F)\n",
+        "    retorne ((5F - 160)/9)\n",
+        "escreva (\"O valor da temperatura em Celsius é\", C)\n",
+        "escreva (\"Digite o valor em polegadas a ser convertido.\")\n",
+        "receba P\n",
+        "funcao M(P)\n",
+        "    retorne (P*25.4)\n",
+        "escreval (\"O valor do volume de chuva em mm é\", M)\n",
+        "\n",
+        "fim_algoritmo_conversoes_gerais\n"
+      ],
+      "metadata": {
+        "id": "i7IKO1qA8Cku"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 8:"
+      ],
+      "metadata": {
+        "id": "uc6YxVI7APag"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_custo_aluminio\n",
+        "\n",
+        "const real P = 3.14159\n",
+        "declare R, H, V float\n",
+        "\n",
+        "escreva (\"Qual a medida do raio da latinha, em metros?\")\n",
+        "receba R\n",
+        "escreva (\"Qual a medida da altura da latinha, em metros?\")\n",
+        "receba H\n",
+        "\n",
+        "#função A que calcula a área total do cilindro\n",
+        "funcao A(P, R, H)\n",
+        "    devolva (2*P*R(R+H))\n",
+        "\n",
+        "#função que calcula o custo relacionado à área da lata e ao valor do alumínio\n",
+        "funcao C(A)\n",
+        "    devolva (A*100)\n",
+        "\n",
+        "escreval (\"O custo para a produção da latinha é de\", C \" reais.\")\n",
+        "\n",
+        "fim_algoritmo_custo_aluminio"
+      ],
+      "metadata": {
+        "id": "-xHNvyb5ARhI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 9:"
+      ],
+      "metadata": {
+        "id": "ZvM4ynrI8ML9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_delta\n",
+        "\n",
+        "declare a, b, c, D float\n",
+        "\n",
+        "escreva (\"Qual o valor do coeficiente a?\")\n",
+        "receba a\n",
+        "escreva (\"Qual o valor do coeficiente b?\")\n",
+        "receba b\n",
+        "escreva (\"Qual o valor do coeficiente c?\")\n",
+        "receba c\n",
+        "\n",
+        "funcao D(a, b, c)\n",
+        "    devolva(b^2 - 4*a*c)\n",
+        "\n",
+        "escreval (\"O valor de delta é\", D)\n",
+        "\n",
+        "fim_algoritmo_delta"
+      ],
+      "metadata": {
+        "id": "cD6Bgd_-8PvK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 10:"
+      ],
+      "metadata": {
+        "id": "9GmbN5vRAT8v"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_matriz\n",
+        "\n",
+        "declare Det, numerico\n",
+        "\n",
+        "escreva (\"Quais são os quatro números da matriz?\")\n",
+        "receba a b c d\n",
+        "funcao Det(a, b, c, d)\n",
+        "    retorne (a*d - b*c)\n",
+        "escreva (\"O valor do determinante é\", Det)\n",
+        "\n",
+        "fim_algoritmo_determinante"
+      ],
+      "metadata": {
+        "id": "E-fXYn0mAt2Q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 11:"
+      ],
+      "metadata": {
+        "id": "oHjzkrXpGVr6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_divisibilidade\n",
+        "\n",
+        "declare n1, numerico\n",
+        "\n",
+        "escreva (\"Qual é o número a passar por verificação de divisibilidade?\")\n",
+        "receba n1\n",
+        "se n1 % 3 == 0:\n",
+        "    escreval (\"O número\", n1 \"é divisível por 3.\")\n",
+        "senao\n",
+        "    escreval (\"O número\", n1 \"não é divisível por 3.\")\n",
+        "se n1 % 5 == 0:\n",
+        "    escreval (\"O número\", n1 \"é divisível por 5.\")\n",
+        "senao\n",
+        "    escreval (\"O número\", n1 \"não é divisível por 5.\")\n",
+        "\n",
+        "fim_algoritmo_divisibilidade"
+      ],
+      "metadata": {
+        "id": "weLWdkvPGXzn"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 12:"
+      ],
+      "metadata": {
+        "id": "ih5eLY7lH3As"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_horas_charrete\n",
+        "\n",
+        "escreva (\"Qual a quantidade de horas de uso?\")\n",
+        "receba horas\n",
+        "\n",
+        "funcao valor(horas)\n",
+        "se horas <= 3:\n",
+        "    entao valor = 5*horas\n",
+        "se horas = 3:\n",
+        "    entao valor = 10\n",
+        "se horas > 3:\n",
+        "    entao valor = (horas % 3)*5 + #não sei como terminar"
+      ],
+      "metadata": {
+        "id": "VvfP78khH50q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 13:"
+      ],
+      "metadata": {
+        "id": "yu87W8YF2rtV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_nota\n",
+        "\n",
+        "declare nota, float\n",
+        "\n",
+        "escreva (\"Digite a nota do aluno (número entre 0 e 10)\")\n",
+        "receba nota\n",
+        "se nota >= 9 e nota <= 10:\n",
+        "    escreval (\"Nota\", nota \"= conceito A.\")\n",
+        "se nota >= 7.5 e nota <= 8.9:\n",
+        "    escreval (\"Nota\", nota \"= conceito B.\")\n",
+        "se nota >= 6 e nota <= 7.4:\n",
+        "    escreval (\"Nota\", nota \"= conceito C.\")\n",
+        "se nota >= 0 e nota <= 5.9:\n",
+        "    escreval (\"Nota\", nota \"= conceito D.\")\n",
+        "\n",
+        "fim_algoritmo_nota"
+      ],
+      "metadata": {
+        "id": "dTclfciV2vah"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 14:"
+      ],
+      "metadata": {
+        "id": "2c5EfeuVAzwn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_area_piramide\n",
+        "\n",
+        "declare h, a float\n",
+        "\n",
+        "escreva (\"Digite a altura e a aresta da baseda pirâmide, em metros.\")\n",
+        "receba h a\n",
+        "funcao volume(h, a)\n",
+        "    devolva ((a^2*3^1/2*h)/2)\n",
+        "#usando raiz de três como três elevado a um sobre dois\n",
+        "escreval (\"O volume da pirâmide é\", volume \"metros cúbicos.\")\n",
+        "\n",
+        "fim_algoritmo_area_piramide"
+      ],
+      "metadata": {
+        "id": "77bTRH1qCQom"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resoluçaõ da questão 15:"
+      ],
+      "metadata": {
+        "id": "AHdHWpe7DyhX"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_quadrado_pares\n",
+        "\n",
+        "declare n, x numerico\n",
+        "\n",
+        "escreva (\"Qual é o número?\")\n",
+        "receba n\n",
+        "para (inteiro i = 0; i <= numero; i++) {\n",
+        "    escreva (i, \" \")\n",
+        "}\n",
+        "se n % 2 == 0:\n",
+        "    retorne (n^2) = x\n",
+        "escreval (\"O quadrado do número é\", x \".\")\n",
+        "senao\n",
+        "    escreval (\"O número não é par.\")\n",
+        "#tive bastante dificuldade pra fazer esse\n",
+        "\n",
+        "fim_algoritmo_quadrado_pares"
+      ],
+      "metadata": {
+        "id": "I8FMPg_rA-Yg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 16:"
+      ],
+      "metadata": {
+        "id": "FiUrrz9sMRfz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_reajuste\n",
+        "\n",
+        "declare salario, novosalario numerico\n",
+        "\n",
+        "escreva (\"Qual o salário do funcionário?\")\n",
+        "receba salario\n",
+        "\n",
+        "se salario <= 300:\n",
+        "    novosalario = (1.5*salario)\n",
+        "se salario > 300:\n",
+        "    novosalario = (1.3*salario)\n",
+        "\n",
+        "escreva (\"SALÁRIO COM REAJUSTE =\", novosalario)\n",
+        "\n",
+        "fim_algoritmo_reajuste"
+      ],
+      "metadata": {
+        "id": "4LPenX9ZMdNl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 17:"
+      ],
+      "metadata": {
+        "id": "23KeKHjWOGsS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_sequencia\n",
+        "\n",
+        "escreva (\"Digite dois números, sendo o primeiro par.\")\n",
+        "receba n1 n2\n",
+        "se n1 % 2 == 0:\n",
+        "    para (i = n1; i <= n2; i+=2)\n",
+        "        escreval (i, \" \")\n",
+        "senao:\n",
+        "    escreva (\"O número selecionado não é par.\")\n",
+        "\n",
+        "fim_algoritmo_sequencia"
+      ],
+      "metadata": {
+        "id": "9-mGKBIfOJms"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 18:"
+      ],
+      "metadata": {
+        "id": "qiJSADqZRfhP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_progressao_aritmetica\n",
+        "\n",
+        "declare a1, r, n numerico\n",
+        "\n",
+        "escreva (\"Digite o primeiro termo da P.A., a sua razão e o seu número de termos.\")\n",
+        "receba a1 r n\n",
+        "para (i = a1; i <= n; i+=r) {\n",
+        "    escreva (i, \" \")\n",
+        "    soma = soma + i\n",
+        "}\n",
+        "\n",
+        "fim_algoritmo_progressao_aritmetica"
+      ],
+      "metadata": {
+        "id": "f3-VcYoKRjTZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 19:"
+      ],
+      "metadata": {
+        "id": "CLt00vnzVBhg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmmo_soma\n",
+        "\n",
+        "escreva (\"Digite um número inteiro e positivo maior que 1.\")\n",
+        "receba n1\n",
+        "se n1 <= 0: {\n",
+        "  pare\n",
+        "    escreva (\"Número inválido.\")\n",
+        "}\n",
+        "senao {\n",
+        "    para (k = 1; k <= n1; k++) {\n",
+        "          soma = soma + (1/k)\n",
+        "    }\n",
+        "   escreval (\"A soma é\", soma \",\")\n",
+        "}\n",
+        "\n",
+        "fim_algoritmo_soma"
+      ],
+      "metadata": {
+        "id": "ecXxq_o8XGx1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Resolução da questão 20:"
+      ],
+      "metadata": {
+        "id": "f7YjzQVIXEhp"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "algoritmo_segundos\n",
+        "\n",
+        "declare horas, minutos, segundos, horaseg, minutoseg, segundostotal numerico\n",
+        "\n",
+        "escreva (\"Informe o horário na seguinte ordem: horas, em horas; minutos, em minutos; segundos, em segundos.\")\n",
+        "receba horas minutos segundos\n",
+        "funcao horaseg(horas)\n",
+        "    escreva (horas*3600)\n",
+        "funcao minutoseg(minutos)\n",
+        "    escreva (minutos*60)\n",
+        "segundostotal = (horaseg + minutoseg + segundos)\n",
+        "escreval (\"O tempo em segundo é\", segundostotal \".\")\n",
+        "\n",
+        "fim_algoritmo_segundos"
+      ],
+      "metadata": {
+        "id": "Bv0zy0e5XPCS"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
