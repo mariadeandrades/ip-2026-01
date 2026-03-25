@@ -1,18 +1,3 @@
-// algoritmo_aprova_reprova
-
-// declare media, nota1, nota2, nota3 numerico
-
-// escreva ("Quais são suas notas? (Digite-as espaçadamente)")
-// leia nota1 nota2 nota3
-
-// funcao media(nota1, nota2, nota3)
-//     retorne ((nota1 + nota2 + nota3)/3) "\n"
-// se media >= 6:
-//   escreva ("APROVADO!\n")
-// senão
-//   escreva ("REPROVADO!\n")
-
-// fim_algoritmo_aprova_reprova
 package main
 
 import "fmt"
