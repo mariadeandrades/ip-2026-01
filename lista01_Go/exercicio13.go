@@ -9,6 +9,7 @@ func main() {
 	fmt.Scan(&nota)
 	for nota < 0 || nota > 9{
 		fmt.Println("Digite uma nota válida, entre 0 e 9.")
+		fmt.Scan(&nota)
 	}
 	if nota >= 9 && nota <= 10{
     fmt.Println("A nota do aluno é de conceito A.")
