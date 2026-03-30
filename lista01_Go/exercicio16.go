@@ -18,5 +18,3 @@ func main() {
 	}
 	fmt.Printf("O novo salário é %f.", novosalario)
 }
-
-//como fazer uma verificação de entrada para números em geral?
