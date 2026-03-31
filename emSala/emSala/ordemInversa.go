@@ -8,8 +8,12 @@ const numValores int = 10
 func main() {
 	for i := 0; i < numValores; i ++{
 		fmt.Println("Digite dez valores.")
-		fmt.Scan(%array[i])
+		fmt.Scan(&array[i])
 	}
-
+	novoArray := []int{}
+	for i := 9; i >= 0; i-- {
+		novoArray = append(novoArray, array[i])
+	}
+	fmt.Println("Os números em ordem decrescente são:", novoArray)
 }
 //não consegui fazer ainda, vou tentar de novo
