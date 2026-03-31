@@ -9,7 +9,7 @@ var media float64
 
 func main() {
 	for i := 0; i < numNotas; i ++{
-		fmt.Println("Digite as notas do aluno.")
+		fmt.Println("Digite a", i + 1, "° nota do aluno.")
 		fmt.Scan(&nota[i])
 		soma += nota[i]
 	}

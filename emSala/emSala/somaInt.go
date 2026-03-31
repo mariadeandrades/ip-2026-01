@@ -8,7 +8,7 @@ var soma int = 0
 
 func main() {
 	for i := 0; i < numValores; i ++{
-	fmt.Println("Digite cinco números, um após o outro.")
+	fmt.Println("Digite o", i + 1, " número.")
 	fmt.Scan(&valores[i])
 	soma += valores[i] 	
 	}

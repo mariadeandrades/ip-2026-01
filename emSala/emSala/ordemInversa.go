@@ -1,0 +1,15 @@
+package main
+
+import "fmt"
+
+var array[numValores] int
+const numValores int = 10
+
+func main() {
+	for i := 0; i < numValores; i ++{
+		fmt.Println("Digite dez valores.")
+		fmt.Scan(%array[i])
+	}
+
+}
+//não consegui fazer ainda, vou tentar de novo
