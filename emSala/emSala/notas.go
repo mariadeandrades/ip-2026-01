@@ -16,5 +16,3 @@ func main() {
 	media = (soma/3)
 	fmt.Printf("A média das notas do aluno é %f.", media)
 }
-
-//problema na linha 13
