@@ -1,3 +1,4 @@
+// aula doa dia 30/03/2026
 package main
 
 import "fmt"
@@ -16,4 +17,3 @@ func main() {
 	}
 	fmt.Println("Os números em ordem decrescente são:", novoArray)
 }
-//não consegui fazer ainda, vou tentar de novo
