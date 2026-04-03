@@ -1,4 +1,4 @@
-// aula doa dia 30/03/2026
+// aula do dia 30/03/2026
 package main
 
 import "fmt"
