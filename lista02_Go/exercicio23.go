@@ -8,9 +8,9 @@ func main () {
 
 	fmt.Println("Qual a sua idade?")
 	fmt.Scan(&d)
-	
+
 	for d < 0{
-		fmt.Println("Digite apenas idades não-negativas.")
+		fmt.Println("Digite apenas idades válida, ou seja, não-negativas.")
 		fmt.Scan(&d)
 	}
 
