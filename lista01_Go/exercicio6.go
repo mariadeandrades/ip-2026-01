@@ -1,19 +1,3 @@
-/*
-algoritmo_celsius_fahrenheit
-
-declare F, C float
-
-escreva ("Qual o valor em Fahrenheit a ser convertido?")
-receba F
-
-funcao C(F)
-    retorne(5(F-32)/9)
-
-escreva (F "FAHRENHEIT EQUIAVEL A" C "CELSIUS.")
-
-fim_algoritmo_celsius_fahrenheit
-*/
-
 package main
 
 import "fmt"

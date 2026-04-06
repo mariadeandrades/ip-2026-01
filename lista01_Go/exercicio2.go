@@ -14,7 +14,7 @@ func main(){
 	ra = (parqui*ptotal*10)
 	rc = (pcadeiras*ptotal*20)
 	rendat = (rp + rg + ra + rc)
-	fmt.Printf("A renda total é de %v", rendat) 
+	fmt.Printf("A renda total é de %v\n", rendat) 
 	fmt.Printf("A renda popular é de %v\n", rp)
 	fmt.Printf("A renda geral é de %v\n", rg)
 	fmt.Printf("A renda das arquibancadas é de %v\n", ra)
