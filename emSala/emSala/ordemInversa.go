@@ -7,8 +7,8 @@ var array[numValores] int
 const numValores int = 10
 
 func main() {
+	fmt.Println("Digite dez valores.")
 	for i := 0; i < numValores; i ++{
-		fmt.Println("Digite dez valores.")
 		fmt.Scan(&array[i])
 	}
 	novoArray := []int{}
