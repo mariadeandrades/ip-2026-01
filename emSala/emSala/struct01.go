@@ -1,22 +1,3 @@
-/*package main
-
-import "fmt"
-
-type Criatura struct {
-	Nome string
-}
-
-func main() {
-	c := Criatura{
-		Nome: "Jac and friends",
-	}
-	fmt.Println(c.Nome)
-}
-Crie uma struct para armazenar o nome, altura e peso ideal de uma pessoa. Depois crie um slice e
-preencha seus elementos com structs do tipo pessoa. Leia os dados com uma repetição até ser digitado um nome igual a “FIM”. 
-Calcule o peso ideal com base na fórmula: Peso ideal = 72.7 x altura - 58.0. Imprima o slice
-
-*/
 package main 
 
 import "fmt"
