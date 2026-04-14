@@ -2,21 +2,26 @@ package main
 
 import "fmt"
 
-func consect(num, int) (bool, int, int, bool) {
+var num, n, produto int
+var resultado bool
+
+func consect(num, int) bool {
 	if num < 0{
-		return false, 0, 0, 0
+		return false
 	}
-	for n := 0; n++ {
-		produto := (n*(n+1)*(n+2))
-	}
+	produto := (n*(n+1)*(n+2))
+	if produto == num{
+		return true
+	}else{
+		return false
+		}
 }
 
 func main() {
-	fmt.Println("Digite um número não-negativo:")
+	fmt.Println("Digite um número natural, isto é, não-negativo:")
 	fmt.Scan(&n)
-	if n < 0{
-		fmt.Println("O número não é triangular.")
-	}
+	resultado := consect(num)
+	fmt.Println(resultado)
 }
 /*o professor quer um programa que verifique se um número
 qualquwer é formado pela multiplicação de três consecutivos
