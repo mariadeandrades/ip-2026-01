@@ -5,26 +5,28 @@ import "fmt"
 var num, n, produto int
 var resultado bool
 
-func consect(num, int) bool {
+func consect(num int) bool {
 	if num < 0{
 		return false
 	}
+	for n := 1; ; n ++{
 	produto := (n*(n+1)*(n+2))
-	if produto == num{
-		return true
-	}else{
-		return false
+		if produto == num{
+			return true
+		}else{
+			return false
 		}
+    }
 }
 
 func main() {
 	fmt.Println("Digite um número natural, isto é, não-negativo:")
-	fmt.Scan(&n)
+	fmt.Scan(&num)
 	resultado := consect(num)
-	fmt.Println(resultado)
+	if resultado == true{
+		fmt.Printf("O número %v é formado pelo produto de três números sucessivos!", num)
+	}else{
+		fmt.Printf("O número %v não é formado pelo produto de três números sucessivos!", num)
+	}
 }
-/*o professor quer um programa que verifique se um número
-qualquwer é formado pela multiplicação de três consecutivos
-ex: 6 = 1*2*3
-a entrada vai ser o número que vai sofrer verificação, eu não sei como
-fazer o programa buscar essa correspondência 
+
