@@ -54,9 +54,7 @@ func main() {
 	}
 	medianotas := (somanotas/2)
 
-	fmt.Println("---Média Aritmética---\nNota até 3: Reprovado\nNota entre 3 e 7: Exame\nNota de 7 para cima: Aprovado")
-	fmt.Printf("ALUNOS APROVADOS: %v\nALUNOS EM EXAME: %v\nALUNOS REPROVADOS: %v", contadorap, contadorex, contadorrep)
+	fmt.Println("---Média Aritmética---\nNota até 3: Reprovado\nNota entre 3 e 7: Exame\nNota de 7 para cima: Aprovado\n")
+	fmt.Printf("ALUNOS APROVADOS: %v\nALUNOS EM EXAME: %v\nALUNOS REPROVADOS: %v\n", contadorap, contadorex, contadorrep)
 	fmt.Printf("\nA média da classe é %.2f.", medianotas)
 }
-
-
