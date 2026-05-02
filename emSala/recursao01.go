@@ -17,7 +17,7 @@ package main
 import "fmt"
 
 func pot(X, N int) int{
-	if N == 0{
+	if N == 0{  //caso base, faz a recursão parar
 		return 1
 	}
 	return X*pot(X, N-1)
