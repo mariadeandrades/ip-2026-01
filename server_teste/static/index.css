@@ -1,0 +1,16 @@
+h2 {
+    color: rgb(228, 13, 120);
+  }
+h1 {
+    color: rgb(228, 54, 135)
+}
+/*testing a CSS coment*/
+#identity {
+  text-decoration: underline wavy pink
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

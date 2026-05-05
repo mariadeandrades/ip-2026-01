@@ -5,21 +5,11 @@ import (
 	"log"
 	"net/http"
 )
-
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Funcionou! Voce acessou: %s", r.URL.Path)
-}
-
 func main() {
-	fmt.Println("Tentando iniciar o servidor na porta 8080...")
-	
-	http.HandleFunc("/", handler)
-	
-	// Guardamos o erro em uma variável para analisar
-	err := http.ListenAndServe(":8081", nil)
-	
-	if err != nil {
-		fmt.Printf("ERRO FATAL: %v\n", err)
+	fileserver := http.FileServer(http.Dir("./static"))
+	http.Handle("/", fileserver)
+	fmt.Printf("port running on http://localhost:8081/\n")
+	if err := http.ListenAndServe(":8081", nil); err != nil {
 		log.Fatal(err)
 	}
 }
