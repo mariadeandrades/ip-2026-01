@@ -3,21 +3,22 @@ package handlers
 import (
 	"html/template"
 	"net/http"
-	"github.com/servidorHTTP/servidorHTTP/app/utils"
 	"strconv"
+
+	"github.com/servidorHTTP/servidorHTTP/app/utils"
 )
 
 type Patient struct {
-	ID          int
-	Nome        string
-	CPF         string
-	Idade       int
-	Peso    	float64
-	TipoSangue  string
+	ID         int
+	Nome       string
+	CPF        string
+	Idade      int
+	Peso       float64
+	TipoSangue string
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles("app/static/index.html")
+	tmpl, err := template.ParseFiles("./app/static/index.html")
 	if err != nil {
 		http.Error(w, "Erro ao carregar página inicial", http.StatusInternalServerError)
 		return
@@ -28,7 +29,7 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
 func CreatePatientHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet {
-		tmpl, err := template.ParseFiles("app/static/forms/createPatient.html")
+		tmpl, err := template.ParseFiles("./app/static/forms/createPatient.html")
 		if err != nil {
 			http.Error(w, "Erro ao carregar formulário", http.StatusInternalServerError)
 			return
@@ -46,7 +47,7 @@ func CreatePatientHandler(w http.ResponseWriter, r *http.Request) {
 		tipoSangue := r.FormValue("tipo_sangue")
 
 		_, err := utils.DB.Exec(`
-			INSERT INTO patients (nome, cpf, idade, peso, tipo_sangue)
+			INSERT INTO pacientes (nome, cpf, idade, peso, tipo_sangue)
 			VALUES ($1, $2, $3, $4, $5)
 		`, nome, cpf, idade, peso, tipoSangue)
 
@@ -95,7 +96,7 @@ func ListPatientsHandler(w http.ResponseWriter, r *http.Request) {
 		patients = append(patients, p)
 	}
 
-	tmpl, err := template.ParseFiles("app/static/forms/listPatients.html")
+	tmpl, err := template.ParseFiles("./app/static/forms/listPatients.html")
 	if err != nil {
 		http.Error(w, "Erro ao carregar lista", http.StatusInternalServerError)
 		return
@@ -128,7 +129,7 @@ func UpdatePatientHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		tmpl, err := template.ParseFiles("app/static/forms/updatePatient.html")
+		tmpl, err := template.ParseFiles("./app/static/forms/updatePatient.html")
 		if err != nil {
 			http.Error(w, "Erro ao carregar formulário de atualização", http.StatusInternalServerError)
 			return
